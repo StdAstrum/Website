@@ -1,0 +1,17 @@
+.a-selected {
+    background-color: var(--blue);
+    color: #eeeeee;
+}
+
+.a-selected-light {
+    background-color: var(--secondary);
+}
+
+.button {
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.button .ai {
+    margin-right: 8px;
+}

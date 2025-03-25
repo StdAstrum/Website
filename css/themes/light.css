@@ -1,0 +1,15 @@
+:root {
+    --primary: #f2f3f5;
+    --secondary: #e3e5e8;
+    --tertiary: #d2d4d8;
+    --primary-transparent: #f2f3f580;
+    --secondary-transparent: #e3e5e880;
+    --tertiary-transparent: #d2d4d880;
+    --text-color: #363636;
+}
+
+.team-logo {
+    background-image: url("/img/logos/astrum-dark-256x256.png");
+    background-size: cover;
+    display: block;
+}

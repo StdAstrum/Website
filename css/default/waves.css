@@ -1,0 +1,111 @@
+:root {
+    --wave-set-height: 60px;
+    --wave-animation-speed: 8s;
+}
+
+.waves-container {
+    z-index: 1;
+    width: 100%;
+}
+  
+.waves {
+    width: 100%;
+    height: var(--wave-set-height);
+}
+
+@media (min-width: 768px) {
+    .waves {
+        height: calc(var(--wave-set-height) * 1);
+    }
+}
+@media (min-width: 1280px) {
+    .waves {
+        height: calc(var(--wave-set-height) * 1);
+    }
+}
+.waves .wave-1 {
+    transform: translateX(50%);
+}
+.wave-2 {
+    transform: translateX(90%);
+}
+.waves .wave-3 {
+    transform: translateX(25%);
+}
+.waves .wave-4 {
+    transform: translateX(0%);
+}
+.waves .wave-1 {
+    fill: var(--blue);
+}
+.waves .wave-2 {
+    fill: var(--primary);
+}
+.waves .wave-3 {
+    fill: var(--blue);
+}
+.waves .wave-4 {
+    fill: var(--secondary);
+}
+.waves.animated .wave-1-container {
+    animation-delay: -1s;
+    animation: infinite-wave var(--wave-animation-speed) ease-in-out infinite;
+    animation-duration: calc(var(--wave-animation-speed) * 2.5);
+}
+.waves.animated .wave-1-container > use.wave-1 {
+    animation-delay: -1s;
+    animation: bobbing-wave 3s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+.waves.animated .wave-2-container {
+    animation-delay: -2s;
+    animation: infinite-wave var(--wave-animation-speed) linear infinite;
+    animation-duration: calc(var(--wave-animation-speed) * 1);
+}
+.waves.animated .wave-2-container > use.wave-2 {
+    transform: translatey(0);
+}
+.waves.animated .wave-3-container {
+    animation-delay: -4s;
+    animation: infinite-wave var(--wave-animation-speed) linear infinite;
+    animation-duration: calc(var(--wave-animation-speed) * 1.5);
+}
+.waves.animated .wave-3-container > use.wave-3 {
+    animation-delay: 1.5s;
+    animation: bobbing-wave 4s cubic-bezier(0.65, 0.05, 0.36, 1) infinite;
+}
+.waves.animated .wave-4-container {
+    animation-delay: -4s;
+    animation: infinite-wave var(--wave-animation-speed) linear infinite;
+    animation-duration: calc(var(--wave-animation-speed) * 1.5);
+}
+.waves.animated .wave-set > use {
+    animation: infinite-wave var(--wave-animation-speed) linear infinite;
+}
+.waves.animated .wave-set > use.wave-1 {
+    animation-delay: -1s;
+    animation-duration: calc(var(--wave-animation-speed) * 2.5);
+}
+.waves.animated .wave-set > use.wave-1 {
+    animation-delay: -5s;
+    animation-duration: calc(var(--wave-animation-speed) * 1);
+}
+  
+@keyframes infinite-wave {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+@keyframes bobbing-wave {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(0.75rem);
+    }
+    100% {
+        transform: translatey(0);
+    }
+}

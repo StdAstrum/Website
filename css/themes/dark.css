@@ -1,0 +1,16 @@
+
+:root {
+    --primary: #212325;
+    --secondary: #1a1c20;
+    --tertiary: #131517;
+    --primary-transparent: #21232580;
+    --secondary-transparent: #1a1c2080;
+    --tertiary-transparent: #13151780;
+    --text-color: #eeeeee;
+}
+
+.team-logo {
+    background-image: url("/img/logos/astrum-light-256x256.png");
+    background-size: cover;
+    display: block;
+}

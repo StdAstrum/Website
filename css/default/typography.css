@@ -1,0 +1,151 @@
+@import url("../fonts/comfortaa.css?family=Comfortaa:wght@300..700&display=swap");
+@import url("../fonts/icons.css");
+
+/*? Global Styles */
+:root {
+    --font-family: "Comfortaa", sans-serif;
+    --font-family-code: "Courier New", Courier, monospace;
+
+    --grid-step: 8px;
+    
+    --font-size-xs: calc(var(--grid-step) * 1.5); /* 12px */
+    --font-size-sm: calc(var(--grid-step) * 2); /* 16px */
+    --font-size-base: var(--font-size-sm); /* 16px */
+    --font-size-lg: calc(var(--grid-step) * 2.25); /* 18px */
+    --font-size-xl: calc(var(--grid-step) * 2.5); /* 20px */
+    --font-size-xxl: calc(var(--grid-step) * 3); /* 24px */
+    --font-size-xxxl: calc(var(--grid-step) * 4); /* 32px */
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-style-italic: italic;
+
+    --line-height-base: 1.5;
+    --line-height-tight: 1.4;
+    --line-height-loose: 1.6;
+}
+
+/*? Body */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+}
+
+/*? H */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color);
+}
+
+h1 { font-size: var(--font-size-xxxl); line-height: var(--line-height-loose); }
+h2 { font-size: var(--font-size-xxl); line-height: var(--line-height-base); }
+h3 { font-size: var(--font-size-xl); line-height: var(--line-height-base); }
+h4 { font-size: var(--font-size-lg); line-height: var(--line-height-tight); }
+h5 { font-size: var(--font-size-base); }
+h6 { font-size: var(--font-size-xs); }
+
+/*? Paragraphs */
+p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+}
+
+/*? Links */
+a {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1;
+    text-decoration: none;
+}
+
+/*? Cursive */
+em, i {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    font-style: var(--font-style-italic);
+}
+
+/*? Bold */
+strong, b {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+}
+
+/*? Underline */
+u {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+s, del {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    text-decoration: line-through;
+}
+
+/*? Code */
+code, pre {
+    font-family: var(--font-family-code);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--secondary);
+    border-width: 1px;
+    padding: 0.25rem;
+    border-radius: var(--border-radius-medium);
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*? Table */
+table {
+    border-collapse: collapse;
+    /* overflow: hidden; */
+    width: 100%;
+    box-shadow: 0 0 0 1px var(--tertiary);
+    border-radius: 8px;
+    border-style: hidden;
+}
+  
+td, th {
+    border-width: 1px;
+    padding: 8px;
+    text-align: left;
+}
+  
+tr:nth-child(even) { background-color: var(--secondary); }
+
+hr { width: 100%; height: 2px; background-color: var(--tertiary); }
+
+.t-base { font-size: var(--font-size-base); }
+.t-xs { font-size: var(--font-size-xs); }
+.t-sm { font-size: var(--font-size-sm); }
+.t-lg { font-size: var(--font-size-lg); }
+.t-xl { font-size: var(--font-size-xl); }
+.t-xxl { font-size: var(--font-size-xxl); }
+.t-xxxl { font-size: var(--font-size-xxxl); }
