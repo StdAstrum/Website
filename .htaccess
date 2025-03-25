@@ -1,0 +1,23 @@
+ErrorDocument 400 https://astrum.ct.ws/400
+ErrorDocument 401 https://astrum.ct.ws/401
+ErrorDocument 403 https://astrum.ct.ws/403
+ErrorDocument 404 https://astrum.ct.ws/404
+ErrorDocument 503 https://astrum.ct.ws/503
+
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ $1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html
+
+
+RewriteCond %{HTTPS} =off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L]
+
+
+RewriteRule ^$ /home [L,R=301]
+php_value date.timezone Europe/Kyiv
