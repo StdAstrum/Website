@@ -1,0 +1,7 @@
+Sitemap: https://ast-rum.tech/sitemap.xml
+User-agent: *
+Allow: /
+Allow: /team
+Allow: /contacts
+Allow: /project-details
+Disallow: /.git
