@@ -1,8 +1,8 @@
-ErrorDocument 400 https://astrum.ct.ws/400
-ErrorDocument 401 https://astrum.ct.ws/401
-ErrorDocument 403 https://astrum.ct.ws/403
-ErrorDocument 404 https://astrum.ct.ws/404
-ErrorDocument 503 https://astrum.ct.ws/503
+ErrorDocument 400 https://ast-rum.tech/400
+ErrorDocument 401 https://ast-rum.tech/401
+ErrorDocument 403 https://ast-rum.tech/403
+ErrorDocument 404 https://ast-rum.tech/404
+ErrorDocument 503 https://ast-rum.tech/503
 
 
 RewriteEngine on
